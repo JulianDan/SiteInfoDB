@@ -8,10 +8,10 @@
 
 ---
 
-This project aims to collect a lot of website's informaton.
-The information includes but not limited to title, description, keywords, icons.
+This project aims to collect a lot of information about websites. 
+The information includes but is not limited to title, description, keyword, icon.
 
-All collected data will be stored in a SQLite database and opened to everyone.
+All collected data will be stored in a SQLite database and will be open to everyone.
 
-Also, we welcome anyone to add, modify and update information to this database. 
+We also welcome anyone to add, modify and update information in this database.
 **However, no site may be deleted unless the site is closed.**
