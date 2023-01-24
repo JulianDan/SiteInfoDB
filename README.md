@@ -1,4 +1,6 @@
 # SiteInfoDB
+## 简介
+
 这个项目旨在收集尽可能多的网站的信息。
 收集的信息包括但不限于网站标题、描述、关键词、图标。
 
@@ -7,6 +9,9 @@
 同时，我们欢迎任何人向这个数据库中添加、修改和更新信息。**但，除非网站关闭，不得删除任何网站的信息。**
 
 ---
+
+# SiteInfoDB
+## Intro
 
 This project aims to collect a lot of information about websites. 
 The information includes but is not limited to title, description, keyword, icon.
