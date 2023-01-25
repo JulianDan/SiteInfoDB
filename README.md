@@ -29,9 +29,9 @@
 | ICON | TEXT | NULL | None | Yes |
 | KEYWORD | TEXT | NULL | 用逗号分隔多个关键词 | Yes |
 | DESCRIPTION | TEXT | NULL | None | Yes |
-| LANG | TEXT | NULL | 对于**单个页面内**支持多语言的网页用逗号分隔 | Yes |
+| LANG | TEXT | NULL | 对于**单个页面内**支持多语言的网页用逗号分隔，如果网页支持较多语言，则跟随当前表的语言 | Yes |
 | REIGON | TEXT | NULL | 网页服务器或其拥有者所在的位置，只能是一个  | Yes |
-| POPULARITY | FLOAT | 0 | 网站热度，计算方法为: log(网站月访问量) | Yes |
+| POPULARITY | FLOAT | 0 | 网站热度，计算方法为: `log(网站月访问量)`, 四舍五入1位小数 | Yes |
 | UPDATE_TIME | TIMESTAMP | current_timestamp | 由数据库内的trigger自动更新 | No |
 | CREATE_TIME | TIMESTAMP | current_timestamp | 不得更改 | No |
 | UPDATE_TIMES | INT | 0 | 修改次数，由数据库内的trigger自动更新 | No |
@@ -72,9 +72,9 @@ Currently, for a record in the database, there are following fields:
 | ICON | TEXT | NULL | None | Yes |
 | KEYWORD | TEXT | NULL | Separate multiple keywords with commas | Yes |
 | DESCRIPTION | TEXT | NULL | None | Yes |
-| LANG | TEXT | NULL | Comma-separated for website that support multiple languages **in one page**| Yes |
-| REIGON | TEXT | NULL | The location of the web server or its owner, only one | YES |
-| POPULARITY | FLOAT | 0 | The website popularity, calculated as log(monthly visits) | Yes |
+| LANG | TEXT | NULL | Comma-separated for multi-language website **in one page**, if the site has many languages, follow the language of the current table| Yes |
+| REIGON | TEXT | NULL | The location of the server or its owner, only one | YES |
+| POPULARITY | FLOAT | 0 | The website popularity, calculated as `log(monthly visits)`, and round to 1 decimal place | Yes |
 | UPDATE_TIME | TIMESTAMP | current_timestamp | Automatically updated by the trigger in the database | No |
 | CREATE_TIME | TIMESTAMP | current_timestamp | cannot be changed | No |
 | UPDATE_TIMES | INT | 0 | Number of modifications, automatically updated by the database trigger | No |
